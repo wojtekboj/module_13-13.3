@@ -10,11 +10,9 @@ process.stdin.on('readable', function () {
                 break;
             case '/versions':
                 console.log('Your Node version is ' + process.versions.node);
-                process.exit();
                 break;
             case '/lang':
                 console.log('Your Languague is ' + process.env.LANG);
-                process.exit();
                 break;
             default:
                 process.stderr.write('Wrong instruction!\n');
